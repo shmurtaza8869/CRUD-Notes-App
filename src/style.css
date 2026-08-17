@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7f6;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+#save-btn {
+    background: #1677ff;
+    color: white;
+}
+
+#cancel-btn {
+    background: #777;
+    color: white;
+}
+
+#search {
+    margin-bottom: 20px;
+}
+
+#message {
+    font-weight: bold;
+    min-height: 24px;
+}
+
+#notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.note-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.note-card h2 {
+    margin-top: 0;
+}
+
+.note-card p {
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.note-actions {
+    margin-top: 15px;
+}
+
+.edit-btn {
+    background: #f0ad4e;
+    color: white;
+}
+
+.delete-btn {
+    background: #d9534f;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
